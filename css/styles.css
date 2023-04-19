@@ -17,6 +17,7 @@ font-weight: 400;
 /* SITENAV */
 .sitenav-list{
   list-style: none;
+  font-weight: 500;
 }
 
 .sitenav-link{
