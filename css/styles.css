@@ -10,6 +10,14 @@ body{
 /* SITE-HEADER */
 .site-header{
   background: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.site-header-actions{
+display: flex;
+align-items: center;
 }
 
 .logo-title{
@@ -22,6 +30,7 @@ body{
 .sitenav-list{
   list-style: none;
   font-weight: 500;
+  display: flex;
 }
 
 .sitenav-link{
@@ -49,6 +58,9 @@ font-weight: 700;
 .hero{
 background-color: #252420;
 color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .hero-content{
@@ -100,10 +112,19 @@ width: 340px;
   font-weight: 700;
 }
 
+.features-list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
 /* PROMO */
 .promo{
 background-color: #252420;
 color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .promo-content{
@@ -130,6 +151,13 @@ object-fit: cover;
 
 
 /* SITE-FOOTER */
+
+.site-footer-top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
 .site-footer{
   background-color: #f8f8f8;
 }
@@ -138,15 +166,18 @@ object-fit: cover;
 list-style: none;
 }
 
+.site-footer-socials{
+display: flex;
+align-items: center;
+}
+
 .site-footer-divider{
   height: 2px;
   background: rgba(37, 36, 32, 0.5);
 }
 
-
-.site-footer-links{
-  width: 224px;
-  line-height: 19px;
+.site-footer-links-list{
+  display: flex;
 }
 
 .site-footer-links a {
