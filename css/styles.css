@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+
 /* BODY */
 body{
+  padding: 0;
+  margin: 0;
   font-family: "Roboto","Arial",serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
@@ -12,15 +18,28 @@ body{
   outline-offset: 3px;
 }
 
+/* CONTAINER */
+.container {
+width: 100%;
+max-width: 1140px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
 /* SITE-HEADER */
 .site-header{
   background: white;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
   border-top: 5px solid #FF7500;
+}
+
+.site-header-container{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-link{
@@ -119,6 +138,9 @@ padding-top: 80px;
 padding-bottom: 80px;
 background-color: #252420;
 color: #fff;
+}
+
+.hero-container{
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -141,6 +163,7 @@ background-color: #FF7500;
 width: 510px;
 height: 510px;
 border-radius: 8px;
+/* box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6); */
 }
 
 .hero-heading{
@@ -180,6 +203,7 @@ padding-bottom: 210px;
   align-items: center;
   width: 100px;
   height: 100px;
+  margin-bottom: 32px;
   border-radius: 50%;
   background-color: rgba(255, 117, 0, 0.2);
 }
@@ -195,10 +219,15 @@ margin-right: 0;
 }
 
 .feature-title{
+  margin-top: 0;
+  margin-bottom: 12px;
   font-size: 24px;
   line-height: 1.2;
   font-family: "Roboto Condensed","Arial",serif;
-  font-weight: 700;
+}
+
+.feature-info{
+  margin: 0;
 }
 
 .features-list{
@@ -210,13 +239,20 @@ margin-right: 0;
 }
 
 /* PROMO */
+
 .promo{
-background-color: #252420;
-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.promo-inner{
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 64px;
 border-radius: 12px;
+background-color: #252420;
+color: #fff;
 }
 
 .promo-content{
@@ -291,8 +327,15 @@ margin-right: 16px;
 
 .site-footer-socials li:last-child{
   margin-right: 0;
-
   }
+
+  .site-footer-links li{
+margin-bottom: 16px;
+  }
+
+  .site-footer-links li:last-child{
+    margin-bottom: 0;
+      }
 
 .site-footer-socials a{
   display: block;
